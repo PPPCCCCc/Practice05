@@ -28,8 +28,10 @@ public class BookShop {
 
         // (1) 입력된 번호에 맞는 책을 찾아 대여 되었음(상태코드=0)을 체크 합니다.
         // 코드작성
-        
-        
+        for (int i = 0; i < books.length; i++) {
+			if(books[i].bookNo==num)
+        		books[i].rent(num);
+			}
 
         System.out.println("*****도서 정보 출력하기******");
         displayBookInfo(books);
@@ -39,7 +41,9 @@ public class BookShop {
 
     //(2)전달받은 배열을 모두 출력하는 메소드
     private static void displayBookInfo(Book[] books) {
-        
+        for (int i = 0; i < books.length; i++) {
+        	books[i].print();
+        }
     	//코드작성
     }
 }
