@@ -26,17 +26,13 @@ public class FriendApp {
 
 			friendArray[i] = friend;
 		}
-		
 
 		// 친구정보 출력
 		for (int i = 0; i < friendArray.length; i++) {
 			// 친구정보 출력 메소드 호출
 			friendArray[i].showInfo();
 		}
-		
-
 		sc.close();
-		
 	}
 
 }
